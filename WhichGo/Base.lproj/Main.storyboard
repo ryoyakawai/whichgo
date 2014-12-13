@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ixj-3a-swG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ixj-3a-swG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Menu-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Menu" id="vXZ-lx-hvc" userLabel="View Controller Menu" customClass="MenuViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -25,6 +25,9 @@
                                 <state key="normal" title="食べ歩きコース">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressItem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6qf-Hr-OgU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCZ-uJ-XXf">
                                 <rect key="frame" x="255" y="110" width="90" height="30"/>
@@ -34,6 +37,9 @@
                                 <state key="normal" title="アートコース">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressItem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Pg-Ly-w7b"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2N-Rx-sQD">
                                 <rect key="frame" x="248" y="148" width="105" height="30"/>
@@ -43,6 +49,9 @@
                                 <state key="normal" title="サクッとコース">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressItem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8xt-Ht-YLx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqD-7j-YKS">
                                 <rect key="frame" x="255" y="186" width="90" height="30"/>
@@ -52,6 +61,9 @@
                                 <state key="normal" title="ディープ金沢">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressItem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2je-ZZ-5yN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBt-1w-PMb">
                                 <rect key="frame" x="263" y="224" width="75" height="30"/>
@@ -61,6 +73,9 @@
                                 <state key="normal" title="忍者コース">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressItem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a71-Jj-PfX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -77,19 +92,19 @@
                             <constraint firstItem="XMw-Zb-Hr3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="yg4-f3-YEL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jXE-NF-kgd"/>
+                    <navigationItem key="navigationItem" title="Menu" id="jXE-NF-kgd"/>
                     <connections>
-                        <segue destination="El9-Cf-Nk0" kind="show" id="hT4-3E-Lh5"/>
+                        <segue destination="El9-Cf-Nk0" kind="show" identifier="NextSegue" id="HV6-GZ-YsQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1140" y="389"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Which-->
         <scene sceneID="Rmn-ns-Lqk">
             <objects>
-                <viewController id="El9-Cf-Nk0" sceneMemberID="viewController">
+                <viewController title="Which" id="El9-Cf-Nk0" userLabel="View Controller Which" customClass="WhichViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ycs-5w-ftC"/>
                         <viewControllerLayoutGuide type="bottom" id="Owi-Rh-zx5"/>
@@ -118,17 +133,17 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="i1m-Mz-CkY" kind="show" id="Bgj-99-CEg"/>
+                        <segue destination="i1m-Mz-CkY" kind="show" identifier="NextSegue" id="Bgj-99-CEg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joH-k8-C75" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1862" y="389"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Bus Stop-->
         <scene sceneID="mTx-nw-hQf">
             <objects>
-                <viewController id="i1m-Mz-CkY" sceneMemberID="viewController">
+                <viewController id="i1m-Mz-CkY" userLabel="View Controller Bus Stop" customClass="BusStopViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IQ1-v9-7dO"/>
                         <viewControllerLayoutGuide type="bottom" id="TbR-DM-ptm"/>
@@ -137,10 +152,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-TC-Soz">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-TC-Soz">
                                 <rect key="frame" x="16" y="72" width="568" height="365"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFO-Iz-5XJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFO-Iz-5XJ">
                                 <rect key="frame" x="282" y="474" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -152,7 +167,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今度のバスまで" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaN-le-lFS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="今度のバスまで" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaN-le-lFS">
                                 <rect key="frame" x="241" y="503" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -164,7 +179,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="次のバスまで" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aON-bD-p9I">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="次のバスまで" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aON-bD-p9I">
                                 <rect key="frame" x="249" y="445" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -197,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="2600" y="389"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Bus Map-->
         <scene sceneID="iYp-tJ-hYv">
             <objects>
-                <viewController id="T3q-ze-q7c" sceneMemberID="viewController">
+                <viewController id="T3q-ze-q7c" userLabel="View Controller Bus Map" customClass="BusMapViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ewc-KJ-mtw"/>
                         <viewControllerLayoutGuide type="bottom" id="hAY-av-wuI"/>
@@ -209,16 +224,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cET-Zw-Mib">
-                                <rect key="frame" x="16" y="72" width="568" height="437"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cET-Zw-Mib">
+                                <rect key="frame" x="16" y="72" width="568" height="470"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0n-r5-Yah">
+                                <rect key="frame" x="524" y="550" width="60" height="30"/>
+                                <state key="normal" title="着いた！">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7uL-yE-eia" kind="show" id="aN9-Xg-k16"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cET-Zw-Mib" firstAttribute="top" secondItem="ewc-KJ-mtw" secondAttribute="bottom" constant="8" id="2gJ-AL-LNL"/>
+                            <constraint firstItem="cET-Zw-Mib" firstAttribute="leading" secondItem="W35-k4-Izt" secondAttribute="leadingMargin" id="8Tx-hI-Iz7"/>
+                            <constraint firstItem="cET-Zw-Mib" firstAttribute="trailing" secondItem="W35-k4-Izt" secondAttribute="trailingMargin" id="Co2-Jz-KxM"/>
+                            <constraint firstItem="hAY-av-wuI" firstAttribute="top" secondItem="I0n-r5-Yah" secondAttribute="bottom" constant="20" id="IZw-Td-Zfv"/>
+                            <constraint firstItem="I0n-r5-Yah" firstAttribute="top" secondItem="cET-Zw-Mib" secondAttribute="bottom" constant="8" id="JBL-QE-Kd6"/>
+                            <constraint firstItem="I0n-r5-Yah" firstAttribute="trailing" secondItem="W35-k4-Izt" secondAttribute="trailingMargin" id="oK9-NN-aT9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEu-V6-2IC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3315" y="389"/>
+            <point key="canvasLocation" x="3391" y="389"/>
+        </scene>
+        <!--View Controller Spot-->
+        <scene sceneID="nPn-zg-mnS">
+            <objects>
+                <viewController id="7uL-yE-eia" userLabel="View Controller Spot" customClass="SpotViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="39b-k5-AP2"/>
+                        <viewControllerLayoutGuide type="bottom" id="VB9-NU-KUP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="arv-fK-19v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmc-vh-Gts">
+                                <rect key="frame" x="0.0" y="64" width="600" height="478"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nt0-JM-0Pc">
+                                <rect key="frame" x="494" y="550" width="90" height="30"/>
+                                <state key="normal" title="見終わった！">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="El9-Cf-Nk0" kind="show" id="cjZ-sH-HNC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tmc-vh-Gts" firstAttribute="leading" secondItem="arv-fK-19v" secondAttribute="leadingMargin" constant="-16" id="D6p-TN-Wpg"/>
+                            <constraint firstItem="nt0-JM-0Pc" firstAttribute="top" secondItem="tmc-vh-Gts" secondAttribute="bottom" constant="8" id="L45-ur-TZA"/>
+                            <constraint firstItem="nt0-JM-0Pc" firstAttribute="trailing" secondItem="arv-fK-19v" secondAttribute="trailingMargin" id="piT-b6-HnC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tmc-vh-Gts" secondAttribute="trailing" constant="-16" id="sUL-Tr-4nh"/>
+                            <constraint firstItem="VB9-NU-KUP" firstAttribute="top" secondItem="nt0-JM-0Pc" secondAttribute="bottom" constant="20" id="t9j-Y3-8uP"/>
+                            <constraint firstItem="tmc-vh-Gts" firstAttribute="top" secondItem="39b-k5-AP2" secondAttribute="bottom" id="xAn-I0-71b"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7O-9P-pg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4114" y="389"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hCj-sy-Dkf">
@@ -304,4 +377,7 @@
             <point key="canvasLocation" x="632" y="1139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HV6-GZ-YsQ"/>
+    </inferredMetricsTieBreakers>
 </document>

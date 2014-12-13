@@ -14,6 +14,11 @@
 		E5E25A461A3C1CB0002BE498 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5E25A441A3C1CB0002BE498 /* LaunchScreen.xib */; };
 		E5E25A521A3C1CB1002BE498 /* WhichGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E25A511A3C1CB1002BE498 /* WhichGoTests.swift */; };
 		E5FBA6B81A3C31A9001DA1C9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6B71A3C31A9001DA1C9 /* TestViewController.swift */; };
+		E5FBA6BA1A3C36F3001DA1C9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6B91A3C36F3001DA1C9 /* MenuViewController.swift */; };
+		E5FBA6BC1A3C370A001DA1C9 /* WhichViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6BB1A3C370A001DA1C9 /* WhichViewController.swift */; };
+		E5FBA6BE1A3C371C001DA1C9 /* BusStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6BD1A3C371C001DA1C9 /* BusStopViewController.swift */; };
+		E5FBA6C01A3C3734001DA1C9 /* BusMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6BF1A3C3734001DA1C9 /* BusMapViewController.swift */; };
+		E5FBA6C21A3C3793001DA1C9 /* SpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6C11A3C3793001DA1C9 /* SpotViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,11 @@
 		E5E25A501A3C1CB1002BE498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E25A511A3C1CB1002BE498 /* WhichGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichGoTests.swift; sourceTree = "<group>"; };
 		E5FBA6B71A3C31A9001DA1C9 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		E5FBA6B91A3C36F3001DA1C9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E5FBA6BB1A3C370A001DA1C9 /* WhichViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhichViewController.swift; sourceTree = "<group>"; };
+		E5FBA6BD1A3C371C001DA1C9 /* BusStopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopViewController.swift; sourceTree = "<group>"; };
+		E5FBA6BF1A3C3734001DA1C9 /* BusMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusMapViewController.swift; sourceTree = "<group>"; };
+		E5FBA6C11A3C3793001DA1C9 /* SpotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,11 @@
 			children = (
 				E5E25A3B1A3C1CB0002BE498 /* AppDelegate.swift */,
 				E5E25A3D1A3C1CB0002BE498 /* ViewController.swift */,
+				E5FBA6B91A3C36F3001DA1C9 /* MenuViewController.swift */,
+				E5FBA6BB1A3C370A001DA1C9 /* WhichViewController.swift */,
+				E5FBA6BD1A3C371C001DA1C9 /* BusStopViewController.swift */,
+				E5FBA6BF1A3C3734001DA1C9 /* BusMapViewController.swift */,
+				E5FBA6C11A3C3793001DA1C9 /* SpotViewController.swift */,
 				E5E25A3F1A3C1CB0002BE498 /* Main.storyboard */,
 				E5E25A421A3C1CB0002BE498 /* Images.xcassets */,
 				E5E25A441A3C1CB0002BE498 /* LaunchScreen.xib */,
@@ -217,9 +232,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FBA6C21A3C3793001DA1C9 /* SpotViewController.swift in Sources */,
+				E5FBA6BC1A3C370A001DA1C9 /* WhichViewController.swift in Sources */,
 				E5E25A3E1A3C1CB0002BE498 /* ViewController.swift in Sources */,
+				E5FBA6C01A3C3734001DA1C9 /* BusMapViewController.swift in Sources */,
 				E5FBA6B81A3C31A9001DA1C9 /* TestViewController.swift in Sources */,
+				E5FBA6BE1A3C371C001DA1C9 /* BusStopViewController.swift in Sources */,
 				E5E25A3C1A3C1CB0002BE498 /* AppDelegate.swift in Sources */,
+				E5FBA6BA1A3C36F3001DA1C9 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
