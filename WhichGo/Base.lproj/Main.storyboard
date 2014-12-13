@@ -113,11 +113,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xsL-Yg-dNG">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenrokuen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xsL-Yg-dNG">
                                 <rect key="frame" x="16" y="72" width="568" height="243"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GYs-iz-vO5" appends="YES" id="Alu-KN-80c"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VS8-Hx-8yp">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenrokuen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VS8-Hx-8yp">
                                 <rect key="frame" x="16" y="337" width="568" height="243"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wgR-hV-rwl" appends="YES" id="U9z-e7-Gbr"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -137,13 +145,23 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joH-k8-C75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GYs-iz-vO5" userLabel="1 Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="tapImage1:" destination="El9-Cf-Nk0" id="WWb-Hs-hdO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="wgR-hV-rwl" userLabel="2 Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="tapImage2:" destination="El9-Cf-Nk0" id="cXN-mH-xHh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1862" y="389"/>
         </scene>
         <!--View Controller Bus Stop-->
         <scene sceneID="mTx-nw-hQf">
             <objects>
-                <viewController id="i1m-Mz-CkY" userLabel="View Controller Bus Stop" customClass="BusStopViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="バス停案内" id="i1m-Mz-CkY" userLabel="View Controller Bus Stop" customClass="BusStopViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IQ1-v9-7dO"/>
                         <viewControllerLayoutGuide type="bottom" id="TbR-DM-ptm"/>
@@ -377,6 +395,9 @@
             <point key="canvasLocation" x="632" y="1139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kenrokuen.jpg" width="960" height="638"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HV6-GZ-YsQ"/>
     </inferredMetricsTieBreakers>

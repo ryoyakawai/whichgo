@@ -31,5 +31,11 @@ class WhichViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func tapImage1(sender: AnyObject) {
+        performSegueWithIdentifier("NextSegue", sender: sender)
+    }
 
+    @IBAction func tapImage2(sender: AnyObject) {
+        performSegueWithIdentifier("NextSegue", sender: sender)
+    }
 }

@@ -19,6 +19,8 @@
 		E5FBA6BE1A3C371C001DA1C9 /* BusStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6BD1A3C371C001DA1C9 /* BusStopViewController.swift */; };
 		E5FBA6C01A3C3734001DA1C9 /* BusMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6BF1A3C3734001DA1C9 /* BusMapViewController.swift */; };
 		E5FBA6C21A3C3793001DA1C9 /* SpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6C11A3C3793001DA1C9 /* SpotViewController.swift */; };
+		E5FBA6C41A3C3B4F001DA1C9 /* kenrokuen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5FBA6C31A3C3B4F001DA1C9 /* kenrokuen.jpg */; };
+		E5FBA6C61A3C3C49001DA1C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FBA6C51A3C3C49001DA1C9 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E5FBA6BD1A3C371C001DA1C9 /* BusStopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopViewController.swift; sourceTree = "<group>"; };
 		E5FBA6BF1A3C3734001DA1C9 /* BusMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusMapViewController.swift; sourceTree = "<group>"; };
 		E5FBA6C11A3C3793001DA1C9 /* SpotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotViewController.swift; sourceTree = "<group>"; };
+		E5FBA6C31A3C3B4F001DA1C9 /* kenrokuen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kenrokuen.jpg; sourceTree = "<group>"; };
+		E5FBA6C51A3C3C49001DA1C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FBA6C61A3C3C49001DA1C9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,7 @@
 		E5E25A2D1A3C1CB0002BE498 = {
 			isa = PBXGroup;
 			children = (
+				E5FBA6C51A3C3C49001DA1C9 /* MapKit.framework */,
 				E5E25A381A3C1CB0002BE498 /* WhichGo */,
 				E5E25A4E1A3C1CB1002BE498 /* WhichGoTests */,
 				E5E25A371A3C1CB0002BE498 /* Products */,
@@ -99,6 +105,7 @@
 				E5FBA6C11A3C3793001DA1C9 /* SpotViewController.swift */,
 				E5E25A3F1A3C1CB0002BE498 /* Main.storyboard */,
 				E5E25A421A3C1CB0002BE498 /* Images.xcassets */,
+				E5FBA6C31A3C3B4F001DA1C9 /* kenrokuen.jpg */,
 				E5E25A441A3C1CB0002BE498 /* LaunchScreen.xib */,
 				E5E25A391A3C1CB0002BE498 /* Supporting Files */,
 				E5FBA6B71A3C31A9001DA1C9 /* TestViewController.swift */,
@@ -181,6 +188,11 @@
 				TargetAttributes = {
 					E5E25A351A3C1CB0002BE498 = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E5E25A4A1A3C1CB1002BE498 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -214,6 +226,7 @@
 			files = (
 				E5E25A411A3C1CB0002BE498 /* Main.storyboard in Resources */,
 				E5E25A461A3C1CB0002BE498 /* LaunchScreen.xib in Resources */,
+				E5FBA6C41A3C3B4F001DA1C9 /* kenrokuen.jpg in Resources */,
 				E5E25A431A3C1CB0002BE498 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
