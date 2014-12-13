@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ixj-3a-swG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -97,14 +98,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="選択肢画面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNC-Ja-aLy">
-                                <rect key="frame" x="279" y="147" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xsL-Yg-dNG">
+                                <rect key="frame" x="16" y="72" width="568" height="243"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VS8-Hx-8yp">
+                                <rect key="frame" x="16" y="337" width="568" height="243"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VS8-Hx-8yp" firstAttribute="top" secondItem="xsL-Yg-dNG" secondAttribute="bottom" constant="22" id="25J-dm-JGJ"/>
+                            <constraint firstItem="xsL-Yg-dNG" firstAttribute="top" secondItem="ycs-5w-ftC" secondAttribute="bottom" constant="8" id="JFn-8V-ZS2"/>
+                            <constraint firstItem="xsL-Yg-dNG" firstAttribute="leading" secondItem="7Il-KV-hhp" secondAttribute="leadingMargin" id="buI-Mz-q9V"/>
+                            <constraint firstItem="Owi-Rh-zx5" firstAttribute="top" secondItem="VS8-Hx-8yp" secondAttribute="bottom" constant="20" id="hFl-Sa-2Jk"/>
+                            <constraint firstItem="VS8-Hx-8yp" firstAttribute="leading" secondItem="7Il-KV-hhp" secondAttribute="leadingMargin" id="jjO-Ql-AiF"/>
+                            <constraint firstItem="xsL-Yg-dNG" firstAttribute="trailing" secondItem="7Il-KV-hhp" secondAttribute="trailingMargin" id="kOb-j8-cwX"/>
+                            <constraint firstItem="xsL-Yg-dNG" firstAttribute="height" secondItem="VS8-Hx-8yp" secondAttribute="height" id="nK6-YN-KMR"/>
+                            <constraint firstItem="VS8-Hx-8yp" firstAttribute="trailing" secondItem="7Il-KV-hhp" secondAttribute="trailingMargin" id="o3R-Vu-jfH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="i1m-Mz-CkY" kind="show" id="Bgj-99-CEg"/>
