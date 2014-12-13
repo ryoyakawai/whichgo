@@ -306,6 +306,9 @@
                             <constraint firstItem="tmc-vh-Gts" firstAttribute="top" secondItem="39b-k5-AP2" secondAttribute="bottom" id="xAn-I0-71b"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="tmc-vh-Gts" id="PKh-RL-Qgz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i7O-9P-pg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -399,6 +402,6 @@
         <image name="kenrokuen.jpg" width="960" height="638"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HV6-GZ-YsQ"/>
+        <segue reference="cjZ-sH-HNC"/>
     </inferredMetricsTieBreakers>
 </document>

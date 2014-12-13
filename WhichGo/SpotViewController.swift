@@ -14,6 +14,11 @@ class SpotViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var urlOpt = NSURL(string:"https://www.kanazawa21.jp")
+        if var url = urlOpt {
+            var request = NSURLRequest(URL:url)
+            self.webView.loadRequest(request)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,4 +37,6 @@ class SpotViewController: UIViewController {
     }
     */
 
+    @IBOutlet weak var webView: UIWebView!
+    
 }
