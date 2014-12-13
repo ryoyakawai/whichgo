@@ -16,14 +16,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メニュー画面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKF-8W-21t">
-                                <rect key="frame" x="279" y="97" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMw-Zb-Hr3">
+                                <rect key="frame" x="248" y="72" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="c55-ae-FOp"/>
+                                </constraints>
+                                <state key="normal" title="食べ歩きコース">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCZ-uJ-XXf">
+                                <rect key="frame" x="255" y="110" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="yh5-cU-BEc"/>
+                                </constraints>
+                                <state key="normal" title="アートコース">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2N-Rx-sQD">
+                                <rect key="frame" x="248" y="148" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="XSi-Lr-GSY"/>
+                                </constraints>
+                                <state key="normal" title="サクッとコース">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqD-7j-YKS">
+                                <rect key="frame" x="255" y="186" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Mhp-Jv-Xgk"/>
+                                </constraints>
+                                <state key="normal" title="ディープ金沢">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBt-1w-PMb">
+                                <rect key="frame" x="263" y="224" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="x2O-x2-G6r"/>
+                                </constraints>
+                                <state key="normal" title="忍者コース">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="UqD-7j-YKS" secondAttribute="centerX" id="0yL-Fp-jYu"/>
+                            <constraint firstAttribute="centerX" secondItem="YBt-1w-PMb" secondAttribute="centerX" constant="-0.5" id="6hD-TL-3QT"/>
+                            <constraint firstItem="UqD-7j-YKS" firstAttribute="top" secondItem="b2N-Rx-sQD" secondAttribute="bottom" constant="8" id="Dmk-Fl-wsE"/>
+                            <constraint firstItem="YBt-1w-PMb" firstAttribute="top" secondItem="UqD-7j-YKS" secondAttribute="bottom" constant="8" id="Uzc-eX-khT"/>
+                            <constraint firstAttribute="centerX" secondItem="b2N-Rx-sQD" secondAttribute="centerX" constant="-0.5" id="WF2-47-Gy8"/>
+                            <constraint firstItem="b2N-Rx-sQD" firstAttribute="top" secondItem="GCZ-uJ-XXf" secondAttribute="bottom" constant="8" id="jNx-y9-xLn"/>
+                            <constraint firstItem="GCZ-uJ-XXf" firstAttribute="top" secondItem="XMw-Zb-Hr3" secondAttribute="bottom" constant="8" id="pIN-cE-u9Z"/>
+                            <constraint firstAttribute="centerX" secondItem="GCZ-uJ-XXf" secondAttribute="centerX" id="prO-Yk-Y54"/>
+                            <constraint firstAttribute="centerX" secondItem="XMw-Zb-Hr3" secondAttribute="centerX" constant="-0.5" id="sfa-w2-sQe"/>
+                            <constraint firstItem="XMw-Zb-Hr3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="yg4-f3-YEL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jXE-NF-kgd"/>
                     <connections>
