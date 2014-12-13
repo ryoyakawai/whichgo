@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2E4E2381A3C375C00C3E602 /* dummydata.json in Resources */ = {isa = PBXBuildFile; fileRef = D2E4E2371A3C375C00C3E602 /* dummydata.json */; };
 		E5E25A3C1A3C1CB0002BE498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E25A3B1A3C1CB0002BE498 /* AppDelegate.swift */; };
 		E5E25A3E1A3C1CB0002BE498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E25A3D1A3C1CB0002BE498 /* ViewController.swift */; };
 		E5E25A411A3C1CB0002BE498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E25A3F1A3C1CB0002BE498 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		D2E4E2341A3C240A00C3E602 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		D2E4E2371A3C375C00C3E602 /* dummydata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummydata.json; sourceTree = "<group>"; };
 		E5E25A361A3C1CB0002BE498 /* WhichGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhichGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E25A3A1A3C1CB0002BE498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E25A3B1A3C1CB0002BE498 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		E5E25A381A3C1CB0002BE498 /* WhichGo */ = {
 			isa = PBXGroup;
 			children = (
+				D2E4E2371A3C375C00C3E602 /* dummydata.json */,
 				E5E25A3B1A3C1CB0002BE498 /* AppDelegate.swift */,
 				E5E25A3D1A3C1CB0002BE498 /* ViewController.swift */,
 				E5E25A3F1A3C1CB0002BE498 /* Main.storyboard */,
@@ -200,6 +203,7 @@
 				E5E25A411A3C1CB0002BE498 /* Main.storyboard in Resources */,
 				E5E25A461A3C1CB0002BE498 /* LaunchScreen.xib in Resources */,
 				E5E25A431A3C1CB0002BE498 /* Images.xcassets in Resources */,
+				D2E4E2381A3C375C00C3E602 /* dummydata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

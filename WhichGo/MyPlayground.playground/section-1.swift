@@ -22,6 +22,8 @@ if var str = s2 {
     println("error")
 }
 
+
+
 // API取得の開始処理
 func getData() {
     let URL = NSURL(string: "http://express.heartrails.com/api/json?method=getPrefectures")
