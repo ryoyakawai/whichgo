@@ -13,6 +13,7 @@
 		E5E25A431A3C1CB0002BE498 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E25A421A3C1CB0002BE498 /* Images.xcassets */; };
 		E5E25A461A3C1CB0002BE498 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5E25A441A3C1CB0002BE498 /* LaunchScreen.xib */; };
 		E5E25A521A3C1CB1002BE498 /* WhichGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E25A511A3C1CB1002BE498 /* WhichGoTests.swift */; };
+		E5FBA6B81A3C31A9001DA1C9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBA6B71A3C31A9001DA1C9 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E5E25A4B1A3C1CB1002BE498 /* WhichGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhichGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E25A501A3C1CB1002BE498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E25A511A3C1CB1002BE498 /* WhichGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhichGoTests.swift; sourceTree = "<group>"; };
+		E5FBA6B71A3C31A9001DA1C9 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				E5E25A421A3C1CB0002BE498 /* Images.xcassets */,
 				E5E25A441A3C1CB0002BE498 /* LaunchScreen.xib */,
 				E5E25A391A3C1CB0002BE498 /* Supporting Files */,
+				E5FBA6B71A3C31A9001DA1C9 /* TestViewController.swift */,
 			);
 			path = WhichGo;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5E25A3E1A3C1CB0002BE498 /* ViewController.swift in Sources */,
+				E5FBA6B81A3C31A9001DA1C9 /* TestViewController.swift in Sources */,
 				E5E25A3C1A3C1CB0002BE498 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				E5E25A571A3C1CB1002BE498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5E25A581A3C1CB1002BE498 /* Build configuration list for PBXNativeTarget "WhichGoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				E5E25A5A1A3C1CB1002BE498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
