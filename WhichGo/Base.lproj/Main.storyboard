@@ -196,6 +196,9 @@
                                 <state key="normal" title="バスに乗った！">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="T3q-ze-q7c" kind="show" id="Yo0-Q4-RLB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="次のバスまで" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aON-bD-p9I">
                                 <rect key="frame" x="249" y="445" width="102" height="21"/>
@@ -222,9 +225,6 @@
                             <constraint firstAttribute="centerX" secondItem="aON-bD-p9I" secondAttribute="centerX" id="zqR-Bw-Mge"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="T3q-ze-q7c" kind="show" id="oQf-oV-SE2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUZ-gQ-UCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +233,7 @@
         <!--View Controller Bus Map-->
         <scene sceneID="iYp-tJ-hYv">
             <objects>
-                <viewController id="T3q-ze-q7c" userLabel="View Controller Bus Map" customClass="BusMapViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Bus Map" id="T3q-ze-q7c" userLabel="View Controller Bus Map" customClass="BusMapViewController" customModule="WhichGo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ewc-KJ-mtw"/>
                         <viewControllerLayoutGuide type="bottom" id="hAY-av-wuI"/>
