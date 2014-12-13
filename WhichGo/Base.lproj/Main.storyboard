@@ -137,14 +137,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="バス停案内画面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEU-58-6Rh">
-                                <rect key="frame" x="279" y="117" width="119" height="21"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-TC-Soz">
+                                <rect key="frame" x="16" y="72" width="568" height="365"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFO-Iz-5XJ">
+                                <rect key="frame" x="282" y="474" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs2-gq-lAZ">
+                                <rect key="frame" x="282" y="532" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="今度のバスまで" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaN-le-lFS">
+                                <rect key="frame" x="241" y="503" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRq-YP-Tlc">
+                                <rect key="frame" x="479" y="562" width="105" height="30"/>
+                                <state key="normal" title="バスに乗った！">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="次のバスまで" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aON-bD-p9I">
+                                <rect key="frame" x="249" y="445" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gRq-YP-Tlc" firstAttribute="trailing" secondItem="E8R-bt-MNt" secondAttribute="trailingMargin" id="48r-rm-hEs"/>
+                            <constraint firstAttribute="centerX" secondItem="uaN-le-lFS" secondAttribute="centerX" constant="-0.5" id="49n-7W-kVy"/>
+                            <constraint firstItem="Hs2-gq-lAZ" firstAttribute="top" secondItem="uaN-le-lFS" secondAttribute="bottom" constant="8" id="E0M-cA-z7S"/>
+                            <constraint firstItem="aON-bD-p9I" firstAttribute="top" secondItem="u7K-TC-Soz" secondAttribute="bottom" constant="8" id="S9P-fv-tTO"/>
+                            <constraint firstAttribute="centerX" secondItem="Hs2-gq-lAZ" secondAttribute="centerX" id="Slb-9e-ru2"/>
+                            <constraint firstItem="u7K-TC-Soz" firstAttribute="top" secondItem="IQ1-v9-7dO" secondAttribute="bottom" constant="8" id="ZQw-iA-78Q"/>
+                            <constraint firstItem="TbR-DM-ptm" firstAttribute="top" secondItem="Hs2-gq-lAZ" secondAttribute="bottom" constant="47" id="eRL-wD-B8k"/>
+                            <constraint firstItem="TbR-DM-ptm" firstAttribute="top" secondItem="gRq-YP-Tlc" secondAttribute="bottom" constant="8" id="lU3-9A-x8I"/>
+                            <constraint firstItem="u7K-TC-Soz" firstAttribute="leading" secondItem="E8R-bt-MNt" secondAttribute="leadingMargin" id="q3S-S6-Kdt"/>
+                            <constraint firstAttribute="centerX" secondItem="AFO-Iz-5XJ" secondAttribute="centerX" constant="-0.5" id="su3-Pr-fmd"/>
+                            <constraint firstItem="uaN-le-lFS" firstAttribute="top" secondItem="AFO-Iz-5XJ" secondAttribute="bottom" constant="8" id="vOe-hb-5Li"/>
+                            <constraint firstItem="AFO-Iz-5XJ" firstAttribute="top" secondItem="aON-bD-p9I" secondAttribute="bottom" constant="8" id="vSM-gh-sG3"/>
+                            <constraint firstItem="u7K-TC-Soz" firstAttribute="trailing" secondItem="E8R-bt-MNt" secondAttribute="trailingMargin" id="vfP-ss-9mB"/>
+                            <constraint firstAttribute="centerX" secondItem="aON-bD-p9I" secondAttribute="centerX" id="zqR-Bw-Mge"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="T3q-ze-q7c" kind="show" id="oQf-oV-SE2"/>
