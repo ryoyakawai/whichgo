@@ -1,0 +1,47 @@
+<polymer-element name="x-whichgo">
+  <template>
+  </template>
+  <script type="text/javascript">
+      Polymer({
+      ready: function() {
+          var val=this.getUrlVars();
+          console.log("getValue", val);
+          this.getJson(val.p);
+      },
+      getUrlVars: function(){
+          var vars = {
+          };
+          var param = location.search.substring(1).split('&');
+          for(var i = 0; i < param.length; i++) {
+              
+              var keySearch = param[i].search(/=/);
+              var key = '';
+              if(keySearch != -1) key = param[i].slice(0, keySearch);
+              var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+              if(key != '') vars[key] = decodeURI(val);
+          }
+          return vars;
+      },
+      getJson: function(place) {
+          var self=this;
+          var fileName="data/kanazawa.json";
+          var xhr=new XMLHttpRequest();
+          xhr.open('GET', fileName, true);
+          xhr.onreadystatechange = function(){
+              if (xhr.readyState === 4 && xhr.status === 200){
+                  var contents=JSON.parse(xhr.responseText);
+                  for(var i=0; i<contents.Sheet1.length; i++) {
+                      if(place==contents.Sheet1[i].ID) {
+                          var out=contents.Sheet1[i];
+                          break;
+                      }
+                  }
+                  self.fire("contents-ready", {"select":out, "all":contents.Sheet1});
+              }
+          };
+          xhr.send(null);
+      }
+
+  });
+  </script>
+</polymer-element>

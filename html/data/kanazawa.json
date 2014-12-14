@@ -1,0 +1,301 @@
+{
+  "Sheet1": [
+    {
+      "No.": "1",
+      "ID": "Kenroku-en",
+      "Place": "兼六園",
+      "Latitude": "36.56213888",
+      "Longtitute": "136.6625",
+      "Information": "兼六園（けんろくえん）は、石川県金沢市にある日本庭園。国の特別名勝であり、日本三名園の一つに数えられる。",
+      "PicURL": "http://upload.wikimedia.org/wikipedia/commons/a/a0/131109_Kenrokuen_Kanazawa_Ishikawa_pref_Japan01s3.jpg",
+      "Difficulty": "初心者",
+      "Category": "観光"
+    },
+    {
+      "No.": "2",
+      "ID": "21cMuseum",
+      "Place": "金沢21世紀美術館",
+      "Latitude": "36.5608672",
+      "Longtitute": "136.6582577",
+      "Information": "金沢21世紀美術館（かなざわにじゅういちせいきびじゅつかん）は、石川県金沢市広坂にある現代美術を収蔵した美術館。愛称はまるびぃ（由来は「丸い美術館」）であるが、一般的には「21美（にじゅういちび）」と呼ばれることが多い。",
+      "PicURL": "https://photos-6.dropbox.com/t/2/AABACJQOW2VFPpyTJ_ismkf5xgAeps-OUeZJff72zgQVmw/12/95589116/jpeg/1024x768/3/1418533200/0/2/21centuryMuseum.jpg/CPylyi0gAiABKAEoAg/po5AZDJQVrfo6qagZR4blgJq7JCL9KJgM7Awl_6hcLo",
+      "Difficulty": "初心者",
+      "Category": "芸術"
+    },
+    {
+      "No.": "3",
+      "ID": "KanazawaCastle",
+      "Place": "金沢城",
+      "Latitude": "36.56431666",
+      "Longtitute": "136.6592278",
+      "Information": "金沢城（かなざわじょう）とは、石川県金沢市丸の内にあった日本の城である。江戸時代には加賀藩主前田氏の居城だった。城址は国の史跡に指定されている。",
+      "PicURL": "http://upload.wikimedia.org/wikipedia/commons/3/38/Kanazawa_Castle_Gate.JPG",
+      "Difficulty": "初心者",
+      "Category": "観光"
+    },
+    {
+      "No.": "4",
+      "ID": "KenritsuMuseum",
+      "Place": "石川県立美術館",
+      "Latitude": "36.55999999",
+      "Longtitute": "136.6613889",
+      "Information": "1945年（昭和20年）10月、石川県美術館として金沢市本多町の旧北陸海軍館を改装して開館するが、同年末占領軍によって接収される。1959年（昭和34年）谷口吉郎の設計により同名で開館。1983年（昭和58年）に近接する現在地に移転と共に現在の名称に改称。石川県にゆかりのある作品を中心に収集。1997年（平成9年）石川県文化財保存修復工房が附属され、文化財の修復にも力を入れている。2008年（平成20年）に設備の老朽化に伴う大規模改修が完成。館長の嶋崎丞は昭和34年開館当時からの学芸員であり全国の公立美術館学芸員としては最古参の部類に入る。",
+      "PicURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Ishikawa_Prefectural_Museum_of_Art.JPG/640px-Ishikawa_Prefectural_Museum_of_Art.JPG",
+      "Difficulty": "初心者",
+      "Category": "芸術"
+    },
+    {
+      "No.": "5",
+      "ID": "MtUtatu",
+      "Place": "卯辰山",
+      "Latitude": "36.57305555",
+      "Longtitute": "136.6777778",
+      "Information": "卯辰山（うたつやま）は、石川県金沢市にある山である。金沢城から見て東（卯辰の方角）に位置することから名づけられた。宇多須山（うたすやま）、向山（むかいやま）、夢香山（むこうやま）、臥竜山（がりゅうざん）、春日山（かすがやま）等多数の別名がある。 日本の歴史公園100選に選ばれている。",
+      "PicURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/070317_utatsuyama.jpg",
+      "Difficulty": "中級者",
+      "Category": "観光"
+    },
+    {
+      "No.": "6",
+      "ID": "Oizuru",
+      "Place": "笈ヶ岳",
+      "Latitude": "36.29864888",
+      "Longtitute": "136.7922222",
+      "Information": "笈ヶ岳（おいずるがたけ）は、石川県、富山県、岐阜県の3県にまたがる標高1,841m山。白山国立公園内の両白山地の北側に位置し、日本二百名山[1]に選定されている。",
+      "PicURL": "http://upload.wikimedia.org/wikipedia/commons/c/cb/Hakusan_from_aburazaka_2003_5_5.jpg",
+      "Difficulty": "中級者",
+      "Category": "観光"
+    },
+    {
+      "No.": "7",
+      "ID": "GoldSakuda",
+      "Place": "金銀箔工芸さくだ",
+      "Latitude": "36.573971",
+      "Longtitute": "136.666318",
+      "Information": "四百年の歴史と伝統に培われた金沢の伝統産業「金沢箔」――1919年創業の「金銀箔工芸さくだ」では、工房で職人さんによる金箔製造工程の説明や、箔の作業を間近で見ることができる。また、店内には雅やかな金屏風の展示や金箔・プラチナ箔の化粧室がある。金箔コスメ、蒔絵シール、金箔入り食品等、さくだオリジナル金箔グッズも豊富に取り揃えている。オリジナル作品作りができる「金箔貼り体験」が評判を呼んでいる。",
+      "PicURL": "http://www.goldleaf-sakuda.jp/images/taiken/harai.jpg",
+      "Difficulty": "中級者",
+      "Category": "観光"
+    },
+    {
+      "No.": "8",
+      "ID": "HigashiChaya",
+      "Place": "ひがし茶屋街",
+      "Latitude": "36.573068",
+      "Longtitute": "136.667135",
+      "Information": "浅野川大橋近くに広がる茶屋街で、今も茶屋建の建物が並ぶ。そのうち志摩、懐華楼は内部を公開している。",
+      "PicURL": "http://art43.photozou.jp/pub/71/216071/photo/47052352_624.jpg",
+      "Difficulty": "初心者",
+      "Category": "観光"
+    },
+    {
+      "No.": "9",
+      "ID": "Omicho",
+      "Place": "近江町市場",
+      "Latitude": "36.571285",
+      "Longtitute": "136.657308",
+      "Information": "近江町市場は加賀百万石の台所。狭い地域に170あまりの店が立ち並んでいる。鮮魚，青果，精肉，かまぼこ，乾物，塩干，漬物，酒，駄菓子，惣菜，花，セトモノ，洋品雑貨…等々。おみやげに生ものを，という人には買ったものを氷詰めにしてくれる。",
+      "PicURL": "https://c2.staticflickr.com/4/3727/9871944925_868be369b6_z.jpg",
+      "Difficulty": "初心者",
+      "Category": "食"
+    },
+    {
+      "No.": "10",
+      "ID": "NinjaTemple",
+      "Place": "妙立寺(忍者寺)",
+      "Latitude": "36.555384",
+      "Longtitute": "136.648997",
+      "Information": "前田家の祈願所として歴代藩主自らが参詣し、武運長久と庶民の安穏を祈願した。また一方では、万一の場合の出城として、その中心的役割を持たせたと言われる。そのため、建物全体が迷路状となり極めて複雑な構造を有し、今日では『忍者寺』の別称持つ。",
+      "PicURL": "https://c1.staticflickr.com/1/2/2760148_63a068480f_z.jpg?zz=1",
+      "Difficulty": "中級者",
+      "Category": "観光"
+    },
+    {
+      "No.": "11",
+      "ID": "Motenashi",
+      "Place": "もてなしドーム",
+      "Latitude": "36.580042",
+      "Longtitute": "136.649027",
+      "Information": "金沢の玄関口である金沢駅。東広場には金沢を訪れる人に差し出す雨傘をイメージし、おもてなしの心を表わしたガラスのドーム「もてなしドーム」があります。",
+      "PicURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/%E3%82%82%E3%81%A6%E3%81%AA%E3%81%97%E3%83%89%E3%83%BC%E3%83%A0%EF%BC%91.jpg",
+      "Difficulty": "初心者",
+      "Category": "観光"
+    },
+    {
+      "No.": "12",
+      "ID": "Tudumi",
+      "Place": "鼓門",
+      "Latitude": "36.580042",
+      "Longtitute": "136.649027",
+      "Information": "金沢駅の正面に構えるのは、伝統芸能に使われる鼓をイメージした「鼓門」。金沢の新しいシンボルとして親しまれています。",
+      "PicURL": "http://upload.wikimedia.org/wikipedia/commons/9/98/131108_Kanazawa_Station_Kanazawa_Ishikawa_pref_Japan01s5.jpg",
+      "Difficulty": "初心者",
+      "Category": "観光"
+    },
+    {
+      "No.": "13",
+      "ID": "SuperOmi",
+      "Place": "オーミスーパー",
+      "Latitude": "36.571488",
+      "Longtitute": "136.655877",
+      "Information": "地元の人で知らない人はいない、近江町のハラジュク。Youtubeで見れるCMが有名です",
+      "PicURL": "https://photos-3.dropbox.com/t/2/AAAZJF5vBjK-dH94VKENfRfiJ0txaRrMA7M9rIF0jjZHvw/12/95589116/png/1024x768/3/1418533200/0/2/%E3%82%AA%E3%83%BC%E3%83%9F%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC.png/CPylyi0gAiABKAEoAg/7uYo6NI24C3H82iEBYN44MSbKJyenjVWxp1dDSNeJzw",
+      "Difficulty": "上級者",
+      "Category": "ショッピング"
+    },
+    {
+      "No.": "14",
+      "ID": "OyamaShrine",
+      "Place": "尾山神社",
+      "Latitude": "36.56632222",
+      "Longtitute": "136.6557917",
+      "Information": "尾山神社（おやまじんじゃ）は、石川県金沢市に所在する神社。\r\n主祭神は、加賀藩の藩祖前田利家で、創建は1873年。旧社格は、別格官幣社。境内摂社に歴代藩主を祀った金谷神社がある。神門は津田吉之助によって建てられたもので、重要文化財に指定されている。例祭は利家の命日である4月27日。",
+      "PicURL": "http://upload.wikimedia.org/wikipedia/commons/0/0c/Ishikawa_Kanazawa_Oyama03.jpg",
+      "Difficulty": "中級者",
+      "Category": "観光"
+    },
+    {
+      "No.": "15",
+      "ID": "HouseNomura",
+      "Place": "武家屋敷跡野村家",
+      "Latitude": "36.564111",
+      "Longtitute": "136.650086",
+      "Information": "長町で唯一、一般公開されている武家屋敷跡。代々奉行職を歴任してきた加賀藩士・野村伝兵衛信貞の屋敷跡を公開しており、格式を重んじた当時の様式を見学できます。\r\n2009年にミシュランの観光地格付けにて2つ星に選ばれ、また過去には米国の庭園専門誌「ジャーナル・オブ・ジャパニーズ・ガーデニング」誌の日本庭園ランキングで第3位に選ばれるなど、海外からも高い評価を受けています。",
+      "PicURL": "https://www.dropbox.com/s/kx58yklpoac0qbj/%E6%AD%A6%E5%AE%B6%E5%B1%8B%E6%95%B7%E8%B7%A1%E9%87%8E%E6%9D%91%E5%AE%B6.png?dl=0",
+      "Difficulty": "中級者",
+      "Category": "観光"
+    },
+    {
+      "No.": "16",
+      "ID": "ItaruHonten",
+      "Place": "いたる柿木畠本店",
+      "Latitude": "36.560873",
+      "Longtitute": "136.655922",
+      "Information": "予算5,000円で絶対にはずさない店と地元の方も太鼓判。刺身盛り合わせである「おけ」を頼みましょう。１〜２人であれば「少おけ」で十分。",
+      "PicURL": "http://kanazawa5towns.com/fivetowns/images/shops/000064/itaruhonten.jpg",
+      "Difficulty": "初心者",
+      "Category": "食事"
+    },
+    {
+      "No.": "17",
+      "ID": "SakeOsawa",
+      "Place": "酒の大沢",
+      "Latitude": "36.571074",
+      "Longtitute": "136.656482",
+      "Information": "金沢市近江町市場にある老舗の酒屋さん。金沢まで来たら、美味しい地酒を是非。",
+      "PicURL": "http://beauty-hokuriku.com/wp-content/uploads/2014/08/0Q3A1504.jpg",
+      "Difficulty": "中級者",
+      "Category": "食事"
+    },
+    {
+      "No.": "18",
+      "ID": "Shinano",
+      "Place": "志な野",
+      "Latitude": "36.558534",
+      "Longtitute": "136.652164",
+      "Information": "飲んだあとのしめのお茶漬けを食べに行く店として言わずと知れた名店。様々なメニューも並んでいますが「やっほ茶漬け」(本名=志な野茶漬け)を注文してください。やっほ茶漬けのご飯のおかわりは自由ですが、お茶漬けの具は一度しか出てきませんのでご注意を。ごはんお代わりの場合は大きな声で「やっほ」と言うだけ。マニアックなことを言うとやっほ！ではなく「やほー！！」です。",
+      "PicURL": "http://beauty-hokuriku.com/wp-content/uploads/2014/05/IMG_5365.jpg",
+      "Difficulty": "中級者",
+      "Category": "食事"
+    },
+    {
+      "No.": "19",
+      "ID": "YasukeKomatsu",
+      "Place": "小松弥助",
+      "Latitude": "36.557581",
+      "Longtitute": "136.653333",
+      "Information": "森田さんという生き字引のようなとんでもないすし職人がお寿司を握ってくれます。ことしで84歳だったと思います。彼の人生と寿司との縁の深さに驚かされ、その周りの人々の優しさにも感動したりします。イチローなどの有名人も訪れているみたいです。東京で数寄屋橋へ行くのなら、金沢では間違いなく小松弥助だと言えるのではないでしょうか。高すぎて一般市民はなかなか行けませんが。2万円握りしめて！金沢のグルメを是非満喫してください。",
+      "PicURL": "https://photos-4.dropbox.com/t/2/AABsJ_ilkPgpyPYvoF-omBE0dRWSZILk5rksE4tXX4gqrA/12/95589116/png/1024x768/3/1418533200/0/2/%E5%B0%8F%E6%9D%BE%E5%BC%A5%E5%8A%A9.png/CPylyi0gAiABKAEoAg/V6BwO0pwTkqSQclPes-2jJvHREz9x3lTCWdE2EsXDn4",
+      "Difficulty": "初心者",
+      "Category": "食事"
+    },
+    {
+      "undefined": "◎",
+      "No.": "20",
+      "ID": "No8Ramen",
+      "Place": "8番らーめん 森本店",
+      "Latitude": "36.605217",
+      "Longtitute": "136.683698",
+      "Information": "北陸に住むほとんどの人間が知っている8番ラーメン。北陸最強のラーメンチェーンとして、「なんでやろ？」と地元の人に聞けば、「ハチバン」と返ってきます。今では、香港、台湾へも出店し、グローバルに活躍しているお店です。",
+      "PicURL": "http://art53.photozou.jp/pub/823/1063823/photo/83259259_624.jpg",
+      "Difficulty": "中級者",
+      "Category": "食事"
+    },
+    {
+      "undefined": "◎",
+      "No.": "21",
+      "ID": "GoGoCurry",
+      "Place": "ゴーゴーカレー 金沢本店",
+      "Latitude": "36.591247",
+      "Longtitute": "136.653722",
+      "Information": "金沢カレーの火付け役として市場を牽引。いまや首都圏どころか、ニューヨーク・ブラジルにも出店。名前の由来は、社長が松井秀喜選手のファンで55という名前が付いたとのこと。ニューヨーク出店は松井選手がヤンキースにいたから…という逸話も。松井選手が帰国した今、ゴーゴーカレーはどこへゆくのか…",
+      "PicURL": "http://art53.photozou.jp/pub/823/1063823/photo/83259259_624.jpg",
+      "Difficulty": "初心者",
+      "Category": "食事"
+    },
+    {
+      "No.": "22",
+      "ID": "IkedaBarBAR",
+      "Place": "池田町バルバール",
+      "Latitude": "36.558434",
+      "Longtitute": "136.653292",
+      "Information": "和食な気分ではなく、イタリアンでも楽しみたいときはここ。何を食べても美味しいですが生ハム、ビール、ソーセージ、ピザと、失敗しません。多くの金沢市民が知ってる名店です。",
+      "Difficulty": "中級者",
+      "Category": "食事"
+    },
+    {
+      "No.": "23"
+    },
+    {
+      "No.": "24"
+    },
+    {
+      "No.": "25"
+    },
+    {
+      "No.": "26"
+    },
+    {
+      "No.": "27"
+    },
+    {
+      "No.": "28"
+    },
+    {
+      "No.": "29"
+    },
+    {
+      "No.": "30"
+    },
+    {
+      "No.": "31"
+    },
+    {
+      "No.": "32"
+    },
+    {
+      "No.": "33"
+    },
+    {
+      "No.": "34"
+    },
+    {
+      "No.": "35"
+    },
+    {
+      "No.": "36"
+    },
+    {
+      "No.": "37"
+    },
+    {
+      "No.": "38"
+    },
+    {
+      "No.": "39"
+    },
+    {
+      "No.": "40"
+    }
+  ]
+}
