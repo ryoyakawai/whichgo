@@ -30,6 +30,8 @@ class MenuViewController: UIViewController {
     var labels:[UILabel] = []
     var blackViews:[UIView] = []
     
+    var spots:NSArray = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,6 +56,29 @@ class MenuViewController: UIViewController {
         for i in 0..<labels.count {
             labels[i].text = courseName[i]
         }
+        
+        getData()
+    }
+    
+    // API取得の開始処理
+    func getData() {
+        if var url = NSURL(string: "http://ryoyakawai.github.io/whichgo/html/data/kanazawa.json") {
+            let req = NSURLRequest(URL: url)
+            if var connection = NSURLConnection(request: req, delegate: self, startImmediately: false) {
+                // NSURLConnectionを使ってAPIを取得する
+                NSURLConnection.sendAsynchronousRequest(req,
+                    queue: NSOperationQueue.mainQueue(),
+                    completionHandler: response)
+            }
+        }
+    }
+    
+    // 取得したAPIデータの処理
+    func response(res: NSURLResponse!, data: NSData!, error: NSError!){
+        let json:NSDictionary = NSJSONSerialization.JSONObjectWithData(data,
+            options: NSJSONReadingOptions.AllowFragments, error: nil) as NSDictionary
+        
+        self.spots = json.objectForKey("Sheet1") as NSArray
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,15 +87,20 @@ class MenuViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "NextSegue" {
+            var which = segue.destinationViewController as WhichViewController
+            which.spots = self.spots
+            which.firstIndex = 0
+            which.secondIndex = 1
+        }
     }
-    */
     
     func performNextSegue(sender: AnyObject) {
         performSegueWithIdentifier("NextSegue", sender: sender)

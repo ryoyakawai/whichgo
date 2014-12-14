@@ -2,6 +2,19 @@
 
 import UIKit
 
+"[12,34]"
+
+var reg = NSRegularExpression(pattern: "(.*),(.*)", options: nil, error: nil)
+var string = "123,45"
+var matches = reg?.matchesInString(string, options: nil, range: NSMakeRange(0, countElements(string)))
+//matches[0]
+
+//NSArray *matches = [reg matchesInString:frogSong options:0 range:NSMakeRange(0, [frogSong length])];
+
+var dic = NSDictionary(object: "object", forKey: "key")
+dic
+
+
 var str = "Hello, playground"
 
 1+2
@@ -22,6 +35,7 @@ if var str = s2 {
     println("error")
 }
 
+/*
 // API取得の開始処理
 func getData() {
     let URL = NSURL(string: "http://express.heartrails.com/api/json?method=getPrefectures")
@@ -55,3 +69,4 @@ func response(res: NSURLResponse!, data: NSData!, error: NSError!){
 getData()
 
 
+*/

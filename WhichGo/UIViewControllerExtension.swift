@@ -25,4 +25,5 @@ extension UIViewController {
         titleImageView.frame = CGRectMake(0, 0, 112, 19)
         self.navigationItem.titleView = titleImageView
     }
+    
 }

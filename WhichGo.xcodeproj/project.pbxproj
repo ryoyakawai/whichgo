@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E51258031A3D381300C49F35 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51258021A3D381300C49F35 /* UIViewControllerExtension.swift */; };
+		E51258051A3D52F500C49F35 /* kanazawa.json in Resources */ = {isa = PBXBuildFile; fileRef = E51258041A3D52F500C49F35 /* kanazawa.json */; };
+		E51258071A3D5CC300C49F35 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51258061A3D5CC300C49F35 /* UIImageExtension.swift */; };
 		E5E25A3C1A3C1CB0002BE498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E25A3B1A3C1CB0002BE498 /* AppDelegate.swift */; };
 		E5E25A3E1A3C1CB0002BE498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E25A3D1A3C1CB0002BE498 /* ViewController.swift */; };
 		E5E25A411A3C1CB0002BE498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E25A3F1A3C1CB0002BE498 /* Main.storyboard */; };
@@ -79,6 +81,8 @@
 /* Begin PBXFileReference section */
 		D2E4E2341A3C240A00C3E602 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		E51258021A3D381300C49F35 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E51258041A3D52F500C49F35 /* kanazawa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kanazawa.json; sourceTree = "<group>"; };
+		E51258061A3D5CC300C49F35 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		E5E25A361A3C1CB0002BE498 /* WhichGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhichGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E25A3A1A3C1CB0002BE498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E25A3B1A3C1CB0002BE498 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				D2E4E2341A3C240A00C3E602 /* MyPlayground.playground */,
 				E5FBA6F01A3C7106001DA1C9 /* UIView+Util.swift */,
 				E51258021A3D381300C49F35 /* UIViewControllerExtension.swift */,
+				E51258041A3D52F500C49F35 /* kanazawa.json */,
+				E51258061A3D5CC300C49F35 /* UIImageExtension.swift */,
 			);
 			path = WhichGo;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 				TargetAttributes = {
 					E5E25A351A3C1CB0002BE498 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = NDX97F8XS4;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -394,6 +401,7 @@
 			files = (
 				E5E25A411A3C1CB0002BE498 /* Main.storyboard in Resources */,
 				E5E25A461A3C1CB0002BE498 /* LaunchScreen.xib in Resources */,
+				E51258051A3D52F500C49F35 /* kanazawa.json in Resources */,
 				E5FBA6C41A3C3B4F001DA1C9 /* kenrokuen.jpg in Resources */,
 				E5E25A431A3C1CB0002BE498 /* Images.xcassets in Resources */,
 			);
@@ -431,6 +439,7 @@
 				E5FBA6BC1A3C370A001DA1C9 /* WhichViewController.swift in Sources */,
 				E5E25A3E1A3C1CB0002BE498 /* ViewController.swift in Sources */,
 				E5FBA6C01A3C3734001DA1C9 /* BusMapViewController.swift in Sources */,
+				E51258071A3D5CC300C49F35 /* UIImageExtension.swift in Sources */,
 				E5FBA6B81A3C31A9001DA1C9 /* TestViewController.swift in Sources */,
 				E5FBA6BE1A3C371C001DA1C9 /* BusStopViewController.swift in Sources */,
 				E5E25A3C1A3C1CB0002BE498 /* AppDelegate.swift in Sources */,
@@ -543,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -579,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -590,9 +599,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WhichGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -600,9 +612,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WhichGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

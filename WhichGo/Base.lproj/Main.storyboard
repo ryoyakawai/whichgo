@@ -224,7 +224,7 @@
                                 <rect key="frame" x="0.0" y="218" width="600" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スポット1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYa-EL-PP9">
-                                        <rect key="frame" x="261" y="14" width="78" height="21"/>
+                                        <rect key="frame" x="261" y="14" width="77.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -248,7 +248,7 @@
                                 <rect key="frame" x="0.0" y="486" width="600" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スポット1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljz-2d-9Yy">
-                                        <rect key="frame" x="261" y="14" width="78" height="21"/>
+                                        <rect key="frame" x="261" y="14" width="77.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -317,7 +317,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-TC-Soz">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-TC-Soz">
                                 <rect key="frame" x="16" y="72" width="568" height="243"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRq-YP-Tlc">
@@ -333,7 +333,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="T3q-ze-q7c" kind="show" id="Yo0-Q4-RLB"/>
+                                    <segue destination="T3q-ze-q7c" kind="show" identifier="NextSegue" id="Yo0-Q4-RLB"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXe-rN-3At">
@@ -483,6 +483,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="u7K-TC-Soz" id="NMN-rB-QZg"/>
+                        <outlet property="timeLabel1" destination="8Cg-Av-CdC" id="kQN-DV-jGJ"/>
+                        <outlet property="timeLabel2" destination="HAN-ls-fZ7" id="P8p-l2-3PT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUZ-gQ-UCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -500,7 +505,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cET-Zw-Mib">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cET-Zw-Mib">
                                 <rect key="frame" x="16" y="72" width="568" height="470"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0n-r5-Yah">
@@ -509,7 +514,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7uL-yE-eia" kind="show" id="aN9-Xg-k16"/>
+                                    <segue destination="7uL-yE-eia" kind="show" identifier="NextSegue" id="aN9-Xg-k16"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -523,6 +528,9 @@
                             <constraint firstItem="I0n-r5-Yah" firstAttribute="trailing" secondItem="W35-k4-Izt" secondAttribute="trailingMargin" id="oK9-NN-aT9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="cET-Zw-Mib" id="o3W-9h-owN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEu-V6-2IC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -537,33 +545,45 @@
                         <viewControllerLayoutGuide type="bottom" id="VB9-NU-KUP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="arv-fK-19v">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmc-vh-Gts">
-                                <rect key="frame" x="0.0" y="64" width="600" height="478"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="478"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nt0-JM-0Pc">
-                                <rect key="frame" x="494" y="550" width="90" height="30"/>
+                                <rect key="frame" x="494" y="486" width="90" height="30"/>
                                 <state key="normal" title="見終わった！">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="El9-Cf-Nk0" kind="show" id="cjZ-sH-HNC"/>
+                                    <segue destination="El9-Cf-Nk0" kind="show" identifier="NextSegue" id="cjZ-sH-HNC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tmc-vh-Gts" firstAttribute="leading" secondItem="arv-fK-19v" secondAttribute="leadingMargin" constant="-16" id="D6p-TN-Wpg"/>
+                            <constraint firstItem="tmc-vh-Gts" firstAttribute="top" secondItem="39b-k5-AP2" secondAttribute="bottom" constant="44" id="Eff-83-7Ya"/>
+                            <constraint firstItem="tmc-vh-Gts" firstAttribute="top" secondItem="arv-fK-19v" secondAttribute="topMargin" id="Eui-qc-utb"/>
                             <constraint firstItem="nt0-JM-0Pc" firstAttribute="top" secondItem="tmc-vh-Gts" secondAttribute="bottom" constant="8" id="L45-ur-TZA"/>
                             <constraint firstItem="nt0-JM-0Pc" firstAttribute="trailing" secondItem="arv-fK-19v" secondAttribute="trailingMargin" id="piT-b6-HnC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tmc-vh-Gts" secondAttribute="trailing" constant="-16" id="sUL-Tr-4nh"/>
                             <constraint firstItem="VB9-NU-KUP" firstAttribute="top" secondItem="nt0-JM-0Pc" secondAttribute="bottom" constant="20" id="t9j-Y3-8uP"/>
                             <constraint firstItem="tmc-vh-Gts" firstAttribute="top" secondItem="39b-k5-AP2" secondAttribute="bottom" id="xAn-I0-71b"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Eff-83-7Ya"/>
+                                <exclude reference="xAn-I0-71b"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="webView" destination="tmc-vh-Gts" id="PyT-5t-YJH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i7O-9P-pg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

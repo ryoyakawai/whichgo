@@ -25,6 +25,18 @@ class WhichViewController: UIViewController {
     
     var labels:[UILabel] = []
     
+    var spots:NSArray = []
+    var spotIndex:Int = -1
+    var spotNumber:Int = -1
+
+    var firstIndex:Int = -1
+    var firstNumber:Int = -1
+    
+    var secondIndex:Int = -1
+    var secondNumber:Int = -1
+    
+    var selected:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,8 +45,24 @@ class WhichViewController: UIViewController {
         setupNavigationBar()
 
         self.imageViews = [imageView1, imageView2]
-        imageView1.image = UIImage(named: "course1")
-        imageView2.image = UIImage(named: "course2")
+//        imageView1.image = UIImage(named: "course1")
+//        imageView2.image = UIImage(named: "course2")
+        var spotIndexes:[Int] = [firstIndex, secondIndex]
+        for i in 0..<spotIndexes.count {
+            var n = spotIndexes[i]
+            var dic = spots[n] as NSDictionary
+            var picURL = dic["PicURL_0"] as String
+            
+            if !picURL.hasPrefix("http://") {
+                picURL = "http://ryoyakawai.github.io/whichgo/html/" + picURL
+            }
+            
+            if var url = NSURL(string: picURL) {
+                UIImage.downloadImage(url, handler: { (image, error) -> Void in
+                    self.imageViews[i].image = image
+                })
+            }
+        }
         
         self.blackViews = [blackView1, blackView2]
         for blackView in blackViews {
@@ -44,12 +72,25 @@ class WhichViewController: UIViewController {
         }
         
         self.labels = [label1, label2]
-        var spotName:[String] = ["21世紀美術館", "石川県立美術館"]
-        for i in 0..<labels.count {
-            labels[i].text = spotName[i]
+        
+        
+        for i in 0..<spotIndexes.count {
+            var n = spotIndexes[i]
+            var label = labels[i]
+            if var place = spots[n]["Place"] as? String {
+                label.text = place
+            }
         }
         
+        
+//        if var place1 = spots[0]["Place"] as? String {
+//            label1.text = place1
+//        }
+//        if var place2 = spots[1]["Place"] as? String {
+//            label1.text = place2
+//        }
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,20 +98,37 @@ class WhichViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "NextSegue" {
+            var busStop = segue.destinationViewController as BusStopViewController
+            busStop.spots = self.spots
+            switch selected {
+            case 0:
+                busStop.spotIndex = self.firstIndex
+                busStop.spotNumber = self.firstNumber
+            case 1:
+                busStop.spotIndex = self.secondIndex
+                busStop.spotNumber = self.secondNumber
+            default:
+                busStop.spotIndex = -1
+                busStop.spotNumber = -1
+            }
+        }
     }
-    */
+
     @IBAction func tapImage1(sender: AnyObject) {
+        self.selected = 0
         performSegueWithIdentifier("NextSegue", sender: sender)
     }
 
     @IBAction func tapImage2(sender: AnyObject) {
+        self.selected = 1
         performSegueWithIdentifier("NextSegue", sender: sender)
     }
 }
