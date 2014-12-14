@@ -12,9 +12,14 @@ window.addEventListener("contents-ready", function(event){
     document.getElementById("h2-title").innerText=data.Place;
 
     var img=document.createElement("img");
-    img.id="img00";
-    img.src=data.PicURL;
-    img.width=window.innerWidth;
+    console.log(typeof data.PicURL!="undefined", data.PicURL);
+    if(typeof data.PicURL!="undefined") {
+        img.id="img00";
+        img.src=data.PicURL;
+        img.width=window.innerWidth;
+    } else {
+        img.style.setProperty("display", "none");
+    }
     
     document.getElementById("image").appendChild(img);
     document.getElementById("image").style.setProperty("width", "100%");
