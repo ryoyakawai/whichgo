@@ -10,10 +10,45 @@ import UIKit
 
 class WhichViewController: UIViewController {
 
+    @IBOutlet weak var imageView1: UIImageView!
+    @IBOutlet weak var imageView2: UIImageView!
+    
+    var imageViews:[UIImageView] = []
+    
+    @IBOutlet weak var blackView1: UIView!
+    @IBOutlet weak var blackView2: UIView!
+    
+    var blackViews:[UIView] = []
+    
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    
+    var labels:[UILabel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        setupNavigationBar()
+
+        self.imageViews = [imageView1, imageView2]
+        imageView1.image = UIImage(named: "course1")
+        imageView2.image = UIImage(named: "course2")
+        
+        self.blackViews = [blackView1, blackView2]
+        for blackView in blackViews {
+            blackView.backgroundColor = UIColor.clearColor()
+            var layer = gradientLayer(blackView.bounds)
+            blackView.layer.insertSublayer(layer, atIndex: 0)
+        }
+        
+        self.labels = [label1, label2]
+        var spotName:[String] = ["21世紀美術館", "石川県立美術館"]
+        for i in 0..<labels.count {
+            labels[i].text = spotName[i]
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

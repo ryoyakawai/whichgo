@@ -35,43 +35,27 @@ class MenuViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        setupNavigationBar()
+        
         imageViews = [imageView1, imageView2, imageView3, imageView4]
-        
-        labels = [label1, label2, label3, label4]
-        
-        blackViews = [blackView1, blackView2, blackView3, blackView4]
-        
         for i in 0..<imageViews.count {
             var imageView = imageViews[i]
             imageView.image = UIImage(named: "course\(i+1)")
         }
         
-        
-        var courseName:[String] = ["食い倒れる金沢", "わかりやすく金沢", "底知れぬ金沢", "ROAD OF NINJA"]
-        for i in 0..<labels.count {
-            labels[i].text = courseName[i]
-        }
-        
+        blackViews = [blackView1, blackView2, blackView3, blackView4]
         for blackView in blackViews {
             var layer = gradientLayer(blackView.bounds)
             blackView.layer.insertSublayer(layer, atIndex: 0)
         }
-        
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "BarBackground"), forBarMetrics: .Default)
-        
-        var titleImage = UIImage(named: "BarTitle")
-        var titleImageView = UIImageView(image: titleImage)
-        titleImageView.frame = CGRectMake(0, 0, 112, 19)
-        self.navigationItem.titleView = titleImageView
+
+        labels = [label1, label2, label3, label4]
+        var courseName:[String] = ["食い倒れる金沢", "わかりやすく金沢", "底知れぬ金沢", "ROAD OF NINJA"]
+        for i in 0..<labels.count {
+            labels[i].text = courseName[i]
+        }
     }
     
-    func gradientLayer(frame:CGRect) -> CAGradientLayer {
-        var pageGradient = CAGradientLayer()
-        pageGradient.frame = frame
-        pageGradient.colors = [UIColor(white: 0.0, alpha: 0.0).CGColor, UIColor(white: 0.0, alpha: 1.0).CGColor]
-        return pageGradient
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

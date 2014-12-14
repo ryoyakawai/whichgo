@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51258031A3D381300C49F35 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51258021A3D381300C49F35 /* UIViewControllerExtension.swift */; };
 		E5E25A3C1A3C1CB0002BE498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E25A3B1A3C1CB0002BE498 /* AppDelegate.swift */; };
 		E5E25A3E1A3C1CB0002BE498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E25A3D1A3C1CB0002BE498 /* ViewController.swift */; };
 		E5E25A411A3C1CB0002BE498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E25A3F1A3C1CB0002BE498 /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		D2E4E2341A3C240A00C3E602 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		E51258021A3D381300C49F35 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		E5E25A361A3C1CB0002BE498 /* WhichGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhichGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E25A3A1A3C1CB0002BE498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E25A3B1A3C1CB0002BE498 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				E5FBA6B71A3C31A9001DA1C9 /* TestViewController.swift */,
 				D2E4E2341A3C240A00C3E602 /* MyPlayground.playground */,
 				E5FBA6F01A3C7106001DA1C9 /* UIView+Util.swift */,
+				E51258021A3D381300C49F35 /* UIViewControllerExtension.swift */,
 			);
 			path = WhichGo;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				E5FBA6BE1A3C371C001DA1C9 /* BusStopViewController.swift in Sources */,
 				E5E25A3C1A3C1CB0002BE498 /* AppDelegate.swift in Sources */,
 				E5FBA6F11A3C7106001DA1C9 /* UIView+Util.swift in Sources */,
+				E51258031A3D381300C49F35 /* UIViewControllerExtension.swift in Sources */,
 				E5FBA6BA1A3C36F3001DA1C9 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
