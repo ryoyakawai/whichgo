@@ -5,6 +5,7 @@ window.addEventListener("contents-ready", function(event){
     document.getElementById("h2-title").style.setProperty("background-color", b);
     
     var data=event.detail.select;
+
     var title=document.createElement("title");
     title.innerText=data.Place;
     document.head.appendChild(title);
@@ -12,16 +13,31 @@ window.addEventListener("contents-ready", function(event){
     document.getElementById("h2-title").innerText=data.Place;
 
     var img=document.createElement("img");
-    console.log(typeof data.PicURL!="undefined", data.PicURL);
-    if(typeof data.PicURL!="undefined") {
+    
+    if(typeof data.PicURL_0!="undefined") {
         img.id="img00";
-        img.src=data.PicURL;
+        img.src=data.PicURL_0;
         img.width=window.innerWidth;
+        document.getElementById("image").appendChild(img);
     } else {
         img.style.setProperty("display", "none");
     }
-    
-    document.getElementById("image").appendChild(img);
+
+    for(var i=1; i<5; i++) {
+        if(typeof data["PicURL_"+i]!="undefined") {
+            console.log(data["PicURL_"+i]);
+            var img=document.createElement("img");
+            
+            if(typeof data.PicURL!="undefined") {
+                img.id="img"+i;
+                img.src=data.PicURL;
+                img.width=window.innerWidth;
+            } else {
+                img.style.setProperty("display", "none");
+            }
+        }
+    }
+
     document.getElementById("image").style.setProperty("width", "100%");
     document.getElementById("image").style.setProperty("margin", "0px auto");
 
