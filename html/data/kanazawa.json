@@ -441,9 +441,12 @@
       "Place": "宮谷さん宅",
       "Children_0": "33",
       "Children_1": "36",
+      "Information": "言わずと知れた、片町商店街のドン。普段は、金港堂代表取締役としてオーダーメイドのシャツを販売しつつ、夢も売っている。趣味はマラソン。フランス語も堪能です。",
       "PicURL_0": "http://ryoyakawai.github.io/whichgo/html/images/01.s.jpg",
       "PicURL_1": "http://ryoyakawai.github.io/whichgo/html/images/02.s.jpg",
-      "PicURL_2": "http://ryoyakawai.github.io/whichgo/html/images/03.s.jpg"
+      "PicURL_2": "http://ryoyakawai.github.io/whichgo/html/images/03.s.jpg",
+      "Difficulty": "上級者",
+      "Category": "食事"
     },
     {
       "No.": "33",
