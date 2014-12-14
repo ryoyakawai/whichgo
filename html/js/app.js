@@ -25,7 +25,6 @@ window.addEventListener("contents-ready", function(event){
     document.getElementById("description").innerText=data.Information;
 
     window.onresize=function() {
-        console.log(document.getElementById("img00"), "AAA");
         document.getElementById("img00").width=window.innerWidth;
         //document.getElementById("description").width=window.innerWidth;
     };
