@@ -10,10 +10,66 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var imageView1: UIImageView!
+    @IBOutlet weak var imageView2: UIImageView!
+    @IBOutlet weak var imageView3: UIImageView!
+    @IBOutlet weak var imageView4: UIImageView!
+    
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    
+    @IBOutlet weak var blackView1: UIView!
+    @IBOutlet weak var blackView2: UIView!
+    @IBOutlet weak var blackView3: UIView!
+    @IBOutlet weak var blackView4: UIView!
+    
+    
+    var imageViews:[UIImageView] = []
+    var labels:[UILabel] = []
+    var blackViews:[UIView] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        imageViews = [imageView1, imageView2, imageView3, imageView4]
+        
+        labels = [label1, label2, label3, label4]
+        
+        blackViews = [blackView1, blackView2, blackView3, blackView4]
+        
+        for i in 0..<imageViews.count {
+            var imageView = imageViews[i]
+            imageView.image = UIImage(named: "course\(i+1)")
+        }
+        
+        
+        var courseName:[String] = ["食い倒れる金沢", "わかりやすく金沢", "底知れぬ金沢", "ROAD OF NINJA"]
+        for i in 0..<labels.count {
+            labels[i].text = courseName[i]
+        }
+        
+        for blackView in blackViews {
+            var layer = gradientLayer(blackView.bounds)
+            blackView.layer.insertSublayer(layer, atIndex: 0)
+        }
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "BarBackground"), forBarMetrics: .Default)
+        
+        var titleImage = UIImage(named: "BarTitle")
+        var titleImageView = UIImageView(image: titleImage)
+        titleImageView.frame = CGRectMake(0, 0, 112, 19)
+        self.navigationItem.titleView = titleImageView
+    }
+    
+    func gradientLayer(frame:CGRect) -> CAGradientLayer {
+        var pageGradient = CAGradientLayer()
+        pageGradient.frame = frame
+        pageGradient.colors = [UIColor(white: 0.0, alpha: 0.0).CGColor, UIColor(white: 0.0, alpha: 1.0).CGColor]
+        return pageGradient
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,12 +88,12 @@ class MenuViewController: UIViewController {
     }
     */
     
-    @IBAction func pressItem(sender: AnyObject) {
-        performNextSegue(sender)
-    }
-    
     func performNextSegue(sender: AnyObject) {
         performSegueWithIdentifier("NextSegue", sender: sender)
+    }
+    
+    @IBAction func tapImageView(sender: AnyObject) {
+        performNextSegue(sender)
     }
     
 }

@@ -34,6 +34,20 @@
                ReferencedContainer = "container:WhichGo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E5FBA6D51A3C6E1D001DA1C9"
+               BuildableName = "WhichGoLibTests.xctest"
+               BlueprintName = "WhichGoLibTests"
+               ReferencedContainer = "container:WhichGo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "E5E25A4A1A3C1CB1002BE498"
                BuildableName = "WhichGoTests.xctest"
                BlueprintName = "WhichGoTests"
+               ReferencedContainer = "container:WhichGo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E5FBA6D51A3C6E1D001DA1C9"
+               BuildableName = "WhichGoLibTests.xctest"
+               BlueprintName = "WhichGoLibTests"
                ReferencedContainer = "container:WhichGo.xcodeproj">
             </BuildableReference>
          </TestableReference>
